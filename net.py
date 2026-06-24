@@ -82,7 +82,7 @@ history = []
 
 for epoch in range(epochs):
   epoch_losses = []
-  for x_batch, y_batch in train_data:
+  for x_batch, y_batch in train_loader:
 
     x_batch = x_batch.to(device)
     y_batch = y_batch.to(device)
